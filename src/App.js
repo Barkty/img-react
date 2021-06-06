@@ -1,14 +1,13 @@
-//import image from './images/images.jpeg';
-import Image from './components/images';
-import './App.css';
+import './styles.css';
+import Image from './components/Images';
+import butterflies from './images/butterflies.jpeg';
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-	  <Image url="images/images.jpeg"/>
+	  <Image source={butterflies} w='75vw' h='auto'/>
 	  
     </div>
   );
 }
-
-export default App;
