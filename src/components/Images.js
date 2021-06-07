@@ -1,7 +1,9 @@
 import React from "react";
+import Button from "Buttons.js";
 
 function Image({source, w, h, alt = "Butterflies"}){
     return (
+	<React.Fragment>
 	    <img
 	src={source}
 	alt={alt}
@@ -9,8 +11,11 @@ function Image({source, w, h, alt = "Butterflies"}){
 	    maxWidth: {w},
 	    height: {h}
 
-	}}
-	/>
+		}}
+	    />
+	    <Button value="Increase Size"/>
+	    <Button value="Decrease Size"/>
+	    </React.Fragment>
     );
 }
 
