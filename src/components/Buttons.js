@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class Button extends Component {
+const Button = () => {
     increase = () => {
 	alert('You clicked me!');
     }
